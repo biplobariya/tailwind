@@ -762,8 +762,16 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mt-6 {
@@ -927,6 +935,26 @@ video {
 
 .max-w-\[1400px\] {
   max-width: 1400px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[340px\] {
+  max-width: 340px;
+}
+
+.max-w-\[320px\] {
+  max-width: 320px;
+}
+
+.max-w-\[700px\] {
+  max-width: 700px;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-shrink {
@@ -1470,6 +1498,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -1946,6 +1978,11 @@ video {
   border-style: none;
 }
 
+.bg-\[\#F7F5F0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 245 240 / var(--tw-bg-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2165,6 +2202,16 @@ video {
   padding-bottom: 4px;
 }
 
+.py-\[80px\] {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2269,12 +2316,20 @@ video {
   line-height: 1;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .text-\[18px\] {
   font-size: 18px;
 }
 
 .text-\[24px\] {
   font-size: 24px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .text-\[56px\] {
@@ -2790,8 +2845,32 @@ body{
 }
 
 @media (min-width: 640px) {
+  .sm\:max-w-\[116px\] {
+    max-width: 116px;
+  }
+
+  .sm\:max-w-\[467px\] {
+    max-width: 467px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:text-left {
+    text-align: left;
   }
 
   .sm\:underline {
@@ -2824,6 +2903,10 @@ body{
     width: 100%;
   }
 
+  .md\:max-w-\[600px\] {
+    max-width: 600px;
+  }
+
   .md\:translate-x-0 {
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2853,8 +2936,32 @@ body{
     padding: 0px;
   }
 
+  .md\:px-\[102px\] {
+    padding-left: 102px;
+    padding-right: 102px;
+  }
+
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .md\:opacity-100 {
     opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:max-w-\[286px\] {
+    max-width: 286px;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
 
