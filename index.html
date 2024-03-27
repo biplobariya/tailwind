@@ -8,7 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./src/output.css">
+
+
 </head>
 <body>
   
@@ -59,7 +63,7 @@
                 <span class="text-gray-500">blog</span>
             </div>
             <div class="title mt-4">
-                <h2 class="text-[56px] leading-snug">Everything about fertility</h2>
+                <h2 class="md:text-[56px] text-[36px] leading-snug">Everything about fertility</h2>
                 <div class="section-desc pt-3 pb-8 flex justify-between md:flex-row flex-col border-b-2">
                     <div class="text">
                         <p class="text-lg">Explore the latest science-backed insights on fertility.</p>
@@ -81,7 +85,7 @@
 
                     <div>
                         <a href="#">
-                            <h2 class="mt-6 text-3xl font-medium">Wie kann ich jemanden unterstützen, der mit Unfruchtbarkeit zu kämpfen hat?</h2>
+                            <h2 class="mt-6 text-2xl sm:text-3xl font-medium">Wie kann ich jemanden unterstützen, der mit Unfruchtbarkeit zu kämpfen hat?</h2>
                             <div class="post-meta mt-4 text-gray-500">
                         </a>
                         <span class="capitalize ">mar, 2023</span>
@@ -91,12 +95,12 @@
                 </div>
             </div>
             <div class="featured-article">
-                <h2 class="text-4xl border-b pb-[15px]">Featured articles</h2>
+                <h2 class="text-3xl sm:text-4xl border-b pb-[15px]">Featured articles</h2>
                 <div class="single-article mt-[40px] ">
                     <div class="article-content border-b pb-3">
                         <span class="tag bg-gray-100 px-2 py-1 rounded-[40px]"><a href="#">Allgemein</a></span>
                         <a href="#">
-                            <h2 class="py-3 text-[24px] font-medium">Zyklusstörungen: Wie sich ein unregelmässiger Zyklus auf deinen Kinderwunsch auswirkt</h2>
+                            <h2 class="py-3 text-[20px] leading-[1.3] sm:text-[24px] font-medium">Zyklusstörungen: Wie sich ein unregelmässiger Zyklus auf deinen Kinderwunsch auswirkt</h2>
                         </a>
                         <div class="post-meta text-gray-500">
                             <span class="capitalize ">mar, 2023</span>
@@ -106,7 +110,7 @@
                     </div>
                     <div class="article-content border-b pb-3 pt-4">
                         <span class="tag bg-gray-100 px-2 py-1 rounded-[40px]"><a href="#">Allgemein</a></span>
-                        <a href="#"><h2 class="py-3 text-[24px] font-medium">Zyklusstörungen: Wie sich ein unregelmässiger Zyklus auf deinen Kinderwunsch auswirkt</h2></a>
+                        <a href="#"><h2 class="py-3 text-[20px] leading-[1.3] sm:text-[24px]] font-medium">Zyklusstörungen: Wie sich ein unregelmässiger Zyklus auf deinen Kinderwunsch auswirkt</h2></a>
                         <div class="post-meta text-gray-500">
                             <span class="capitalize ">mar, 2023</span>
                             <span class="ml-[10px]"><i class=" fa-regular fa-clock"></i>
@@ -115,7 +119,7 @@
                     </div>
                     <div class="article-content pt-4">
                         <span class="tag bg-gray-100 px-2 py-1 rounded-[40px]"><a href="#">Allgemein</a></span>
-                        <a href="#"><h2 class="py-3 text-[24px] font-medium">Zyklusstörungen: Wie sich ein unregelmässiger Zyklus auf deinen Kinderwunsch auswirkt</h2></a>
+                        <a href="#"><h2 class="py-3 text-[20px] leading-[1.3] sm:text-[24px]font-medium">Zyklusstörungen: Wie sich ein unregelmässiger Zyklus auf deinen Kinderwunsch auswirkt</h2></a>
                         <div class="post-meta text-gray-500">
                             <span class="capitalize ">mar, 2023</span>
                             <span class="ml-[10px]"><i class=" fa-regular fa-clock"></i>
@@ -135,7 +139,7 @@
     <div class="max-w-[1400px] mx-auto px-5">
         <div class="sec-title flex justify-between items-center ">
             <div class="title">
-                <h2>Treatment</h2>
+                <h2 class="text-[36px] font-semibold">Treatment</h2>
             </div>
             <div class="see-more">
                 <a href="#">See more <span class="px-1"><i class="fa-solid fa-chevron-right"></i></span></a>
@@ -301,9 +305,231 @@
 <!-- Call-to-action section End -->
 
 
+<!-- Video Slider Start -->
+<div class="video-blog">
+    <div class="container max-w-[1400px] mx-auto py-[60px] px-5 swiper mySwiper">
+        <div class="h-slider-wrapper flex gap-5 justify-between">
+            <h2 class="text-[36px] font-semibold leading-[1.2]">Check out the Video Hub</h2>
+            <div class="pagination-btn-wrapper flex gap-5">
+                <div class="swiper-button-nextt custom-next">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+                <div class="swiper-button-prevv custom-prev">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </div>
+        </div>
+        <div class="video-blog-row swiper-wrapper">
+            <!-- Single swiper slider -->
+            <div class="swiper-slide video-blog-col mt-[60px] swiper">
+                <div class="img-sec relative h-[244px]">
+                    <a class="absolute top-4 left-5 bg-white py-1 px-4 rounded-[32px] text-[12px] font-medium" href="#">Body</a>
+                    <img class="w-full h-full object-cover rounded-[20px]" src="./images/image.png" alt="blog image">
+                    <a href="#" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><i class="fa-solid fa-circle-play text-6xl "></i></a>
+                </div>
+                <div class="v-b-title">
+                    <a href="#">
+                        <h2 class="text-xl font-semibold mt-4">Erectile Dysfunction: Facts, Figures and Options</h2>
+                    </a>
+                </div>
+            </div>
+            <!-- Single swiper slider -->
+            <div class="swiper-slide video-blog-col mt-[60px] swiper">
+                <div class="img-sec relative h-[244px]">
+                    <a class="absolute top-4 left-5 bg-white py-1 px-4 rounded-[32px] text-[12px] font-medium" href="#">Body</a>
+                    <img class="w-full h-full object-cover rounded-[20px]" src="./images/image (1).png" alt="blog image">
+                    <a href="#" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><i class="fa-solid fa-circle-play text-6xl "></i></a>
+                </div>
+                <div class="v-b-title">
+                    <a href="#">
+                        <h2 class="text-xl font-semibold mt-4">Erectile Dysfunction: Facts, Figures and Options</h2>
+                    </a>
+                </div>
+            </div>
+            <!-- Single swiper slider -->
+            <div class="swiper-slide video-blog-col mt-[60px] swiper">
+                <div class="img-sec relative h-[244px]">
+                    <a class="absolute top-4 left-5 bg-white py-1 px-4 rounded-[32px] text-[12px] font-medium" href="#">Body</a>
+                    <img class="w-full h-full object-cover rounded-[20px]" src="./images/image (2).png" alt="blog image">
+                    <a href="#" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><i class="fa-solid fa-circle-play text-6xl "></i></a>
+                </div>
+                <div class="v-b-title">
+                    <a href="#">
+                        <h2 class="text-xl font-semibold mt-4">Erectile Dysfunction: Facts, Figures and Options</h2>
+                    </a>
+                </div>
+            </div>
+            <!-- Single swiper slider -->
+            <div class="swiper-slide video-blog-col mt-[60px] swiper">
+                <div class="img-sec relative h-[244px]">
+                    <a class="absolute top-4 left-5 bg-white py-1 px-4 rounded-[32px] text-[12px] font-medium" href="#">Body</a>
+                    <img class="w-full h-full object-cover rounded-[20px]" src="./images/image (3).png" alt="blog image">
+                    <a href="#" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><i class="fa-solid fa-circle-play text-6xl "></i></a>
+                </div>
+                <div class="v-b-title">
+                    <a href="#">
+                        <h2 class="text-xl font-semibold mt-4">Erectile Dysfunction: Facts, Figures and Options</h2>
+                    </a>
+                </div>
+            </div>
+            <!-- Single swiper slider -->
+            <div class="swiper-slide video-blog-col mt-[60px] swiper">
+                <div class="img-sec relative h-[244px]">
+                    <a class="absolute top-4 left-5 bg-white py-1 px-4 rounded-[32px] text-[12px] font-medium" href="#">Body</a>
+                    <img class="w-full h-full object-cover rounded-[20px]" src="./images/image (1).png" alt="blog image">
+                    <a href="#" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><i class="fa-solid fa-circle-play text-6xl "></i></a>
+                </div>
+                <div class="v-b-title">
+                    <a href="#">
+                        <h2 class="text-xl font-semibold mt-4">Erectile Dysfunction: Facts, Figures and Options</h2>
+                    </a>
+                </div>
+            </div>
+            <!-- Single swiper slider -->
+            <div class="swiper-slide video-blog-col mt-[60px] swiper">
+                <div class="img-sec relative h-[244px]">
+                    <a class="absolute top-4 left-5 bg-white py-1 px-4 rounded-[32px] text-[12px] font-medium" href="#">Body</a>
+                    <img class="w-full h-full object-cover rounded-[20px]" src="./images/3.jpg" alt="blog image">
+                    <a href="#" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><i class="fa-solid fa-circle-play text-6xl "></i></a>
+                </div>
+                <div class="v-b-title">
+                    <a href="#">
+                        <h2 class="text-xl font-semibold mt-4">Erectile Dysfunction: Facts, Figures and Options</h2>
+                    </a>
+                </div>
+            </div>
+            <!-- Single swiper slider -->
+            <div class="swiper-slide video-blog-col mt-[60px] swiper">
+                <div class="img-sec relative h-[244px]">
+                    <a class="absolute top-4 left-5 bg-white py-1 px-4 rounded-[32px] text-[12px] font-medium" href="#">Body</a>
+                    <img class="w-full h-full object-cover rounded-[20px]" src="./images/2.jpg" alt="blog image">
+                    <a href="#" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><i class="fa-solid fa-circle-play text-6xl "></i></a>
+                </div>
+                <div class="v-b-title">
+                    <a href="#">
+                        <h2 class="text-xl font-semibold mt-4">Erectile Dysfunction: Facts, Figures and Options</h2>
+                    </a>
+                </div>
+            </div>
+            <!-- Single swiper slider -->
+            <div class="swiper-slide video-blog-col mt-[60px] swiper">
+                <div class="img-sec relative h-[244px]">
+                    <a class="absolute top-4 left-5 bg-white py-1 px-4 rounded-[32px] text-[12px] font-medium" href="#">Body</a>
+                    <img class="w-full h-full object-cover rounded-[20px]" src="./images/image.png" alt="blog image">
+                    <a href="#" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><i class="fa-solid fa-circle-play text-6xl "></i></a>
+                </div>
+                <div class="v-b-title">
+                    <a href="#">
+                        <h2 class="text-xl font-semibold mt-4">Erectile Dysfunction: Facts, Figures and Options</h2>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+<!-- Video Slider End -->
+
+<!-- Category blog section Start -->
+<div class="py-[70px]">
+    <div class="max-w-[1400px] mx-auto px-5">
+        <div class="flex justify-between items-center">
+            <div>
+                <h2 class="text-[36px] font-semibold">Allgemein</h2>
+            </div>
+            <div>
+                <a href="#">See more <span class="px-1"><i class="fa-solid fa-chevron-right"></i></span></a>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-10 mt-10">
+            <!-- Single blog item -->
+            <div class="single-blog-item">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="img">
+                        <img class="rounded-[20px] w-full h-full object-cover" src="./images/2.jpg" alt="blog image">
+                    </div>
+                    <div class="content">
+                        <div class="post-meta text-gray-500">
+                            <span class="capitalize ">mar, 2023</span>
+                            <span class="ml-[10px]"><i class=" fa-regular fa-clock"></i>
+                            9 min</span>
+                        </div>
+                        <h2 class="mt-2 text-[24px] font-semibold leading-tight">Schwanger werden Alkohol & Kinderwunsch</h2>
+                        <p class="text-[16px] mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id placeat, praesentium voluptatum porro perferendis consequatur suscipit dolores natus possimus!</p>
+                        <a class="inline-block mt-3 text-[17px] font-medium" href="#">Read more <span class="px-1"><i class="fa-solid fa-chevron-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single blog item -->
+            <div class="single-blog-item">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="img">
+                        <img class="rounded-[20px] w-full h-full object-cover" src="./images/4.jpg" alt="blog image">
+                    </div>
+                    <div class="content">
+                        <div class="post-meta text-gray-500">
+                            <span class="capitalize ">mar, 2023</span>
+                            <span class="ml-[10px]"><i class=" fa-regular fa-clock"></i>
+                            9 min</span>
+                        </div>
+                        <h2 class="mt-2 text-[24px] font-semibold leading-tight">Werden Schwanger Alkohol werden & werden Kinderwunsch</h2>
+                        <p class="text-[16px] mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id placeat, praesentium voluptatum porro perferendis consequatur </p>
+                        <a class="inline-block mt-3 text-[17px] font-medium" href="#">Read more <span class="px-1"><i class="fa-solid fa-chevron-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single blog item -->
+            <div class="single-blog-item">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="img">
+                        <img class="rounded-[20px] w-full h-full object-cover" src="./images/3.jpg" alt="blog image">
+                    </div>
+                    <div class="content">
+                        <div class="post-meta text-gray-500">
+                            <span class="capitalize ">mar, 2023</span>
+                            <span class="ml-[10px]"><i class=" fa-regular fa-clock"></i>
+                            9 min</span>
+                        </div>
+                        <h2 class="mt-2 text-[24px] font-semibold leading-tight">Schwanger werden Alkohol & Kinderwunsch</h2>
+                        <p class="text-[16px] mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id placeat, praesentium voluptatum porro perferendis consequatur suscipit dolores natus possimus!</p>
+                        <a class="inline-block mt-3 text-[17px] font-medium" href="#">Read more <span class="px-1"><i class="fa-solid fa-chevron-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single blog item -->
+            <div class="single-blog-item">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="img">
+                        <img class="rounded-[20px] w-full h-full object-cover" src="./images/2.jpg" alt="blog image">
+                    </div>
+                    <div class="content">
+                        <div class="post-meta text-gray-500">
+                            <span class="capitalize ">mar, 2023</span>
+                            <span class="ml-[10px]"><i class=" fa-regular fa-clock"></i>
+                            9 min</span>
+                        </div>
+                        <h2 class="mt-2 text-[24px] font-semibold leading-tight">Kinderwunsch Schwanger </h2>
+                        <p class="text-[16px] mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id placeat, praesentium voluptatum porro perferendis consequatur suscipit </p>
+                        <a class="inline-block mt-3 text-[17px] font-medium" href="#">Read more <span class="px-1"><i class="fa-solid fa-chevron-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Category blog section End -->
 
 
 
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./custom.js"></script>
 
 
 </body>
