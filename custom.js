@@ -4,7 +4,7 @@
       slidesPerView: "auto",
       spaceBetween: 30,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination-2",
         clickable: true,
       },
     });
