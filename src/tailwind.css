@@ -55,3 +55,14 @@ h3{
   cursor: no-drop;
 }
 
+
+.swiper-pagination-2{
+  text-align: center;
+}
+.swiper-pagination-bullet-active{
+  background-color: #000;
+}
+
+.video-blog-row{
+  margin-bottom: 64px !important;
+}
