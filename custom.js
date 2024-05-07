@@ -10,7 +10,6 @@
     });
 
 
-
     
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
@@ -38,4 +37,16 @@ var swiper = new Swiper(".mySwiper", {
   },
   mousewheel: true,
   keyboard: true,
+});
+
+
+
+
+// Analysis  slider
+var swiper = new Swiper(".analysis-blog2", {
+  spaceBetween: 30,
+  pagination: {
+      el: ".categories_slider_pagination",
+      clickable: true,
+  }
 });

@@ -45,7 +45,7 @@ h3{
   }
 
 
-  .swiper-button-prevv.custom-prev.swiper-button-disabled {
+.swiper-button-prevv.custom-prev.swiper-button-disabled {
     opacity: 0.3;
     cursor: no-drop;
 }
@@ -75,3 +75,28 @@ h3{
   margin-top: 100px !important;
 }
 
+
+.categories_slider_pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+@media (min-width: 576px) {
+  .categories_slider_pagination {
+    margin-top: 1rem;
+  }
+}
+.categories_slider_pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #2F3034;
+  border-radius: 100%;
+  transition: all .3s ease-in-out;
+  margin: 0 !important;
+}
+
+.categories_slider_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: red;
+}
