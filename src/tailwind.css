@@ -207,3 +207,57 @@ h3{
   color: #000;
   margin-bottom: 20px;
 }
+
+/* Author Details page css */
+
+.author_wrapper .author_details{
+  border: 1px solid #DEDDE6;
+  padding: 25px 24px 32px 24px;
+  border-radius: 20px;
+}
+.author_wrapper .author_details p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #3D4044;
+  padding-top: 16px;
+}
+
+.author_details h3{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: -1%;
+  color: #000;
+}
+
+
+.blockquote{
+  border-left: 1px solid #777C85;
+  padding: 0 32px 0 32px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  font-style: italic;
+}
+ .text p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+ }
+
+ .heading h3{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+ }
+
+ .list ul{
+  margin-left: 20px;
+ }
+ .list ul li{
+  list-style-type: disc;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+ }

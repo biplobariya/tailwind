@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind</title>
+  <title>Blog Category</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,44 +16,116 @@
 </head>
 <body>
 
- <!-- Navbar Start -->
-<div class="py-5 bg-white text-black">
+<!--  Navbar start -->
+<header class='py-5 bg-white tracking-wide relative z-50'>
     <div class="max-w-[1480px] mx-auto px-5">
-        <div class="flex items-center justify-between">
-            <div class="logo">
-                <a href="#">
+            <!-- Menu Area -->
+        <div class='flex flex-wrap items-center justify-between py-3 relative'>
+            <div class="logo-sec">
+                <a href="index.html">
                     <svg width="86" height="28" viewBox="0 0 86 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 16.5541C0 9.91818 4.1032 5.49219 10.7794 5.49219C13.0731 5.49219 15.2861 5.93603 16.8535 6.69956V12.2895H16.7729C15.6058 10.2379 13.5139 9.0305 11.0619 9.0305C6.95868 9.0305 4.46635 11.8456 4.46635 16.5541C4.46635 21.2594 6.96179 24.1149 11.0619 24.1149C13.517 24.1149 15.6058 22.8672 16.7729 20.8156H16.8535V26.4458C15.2861 27.2094 13.0731 27.6532 10.7794 27.6532C4.1032 27.6563 0 23.19 0 16.5541Z" fill="black"/>
                         <path d="M35.196 27.3335V21.5419H35.075L34.8732 22.3861C34.2711 24.9995 32.1388 27.6563 28.1163 27.6563C22.2843 27.6563 18.3828 22.8299 18.3828 16.5541C18.3828 10.3186 22.2843 5.49219 28.1163 5.49219C32.1388 5.49219 34.2711 8.14592 34.8732 10.7624L35.075 11.6066H35.196V5.81498H39.501V27.3366H35.196V27.3335ZM29.0816 24.2763C32.983 24.2763 35.3171 21.2998 35.3171 16.5541C35.3171 11.8487 32.983 8.87221 29.0816 8.87221C25.2608 8.87221 22.8461 11.8891 22.8461 16.5944C22.8461 21.2998 25.2608 24.2763 29.0816 24.2763Z" fill="black"/>
                         <path d="M58.446 27.3343V21.5426H58.325L58.1232 22.3868C57.5211 25.0002 55.3888 27.657 51.3663 27.657C45.5343 27.657 41.6328 22.8307 41.6328 16.5548C41.6328 10.3193 45.5343 5.49293 51.3663 5.49293C55.3888 5.49293 57.5211 8.14666 58.1232 10.7632L58.325 11.6074H58.446V0.34375H62.751V27.3343H58.446ZM52.3316 24.277C56.233 24.277 58.5671 21.3005 58.5671 16.5548C58.5671 11.8495 56.233 8.87295 52.3316 8.87295C48.5108 8.87295 46.0961 11.8898 46.0961 16.5952C46.0961 21.3005 48.5077 24.277 52.3316 24.277Z" fill="black"/>
                         <path d="M81.696 27.3335V21.5419H81.575L81.3732 22.3861C80.7711 24.9995 78.6388 27.6563 74.6163 27.6563C68.7843 27.6563 64.8828 22.8299 64.8828 16.5541C64.8828 10.3186 68.7843 5.49219 74.6163 5.49219C78.6388 5.49219 80.7711 8.14592 81.3732 10.7624L81.575 11.6066H81.696V5.81498H86.001V27.3366H81.696V27.3335ZM75.5816 24.2763C79.483 24.2763 81.8171 21.2998 81.8171 16.5541C81.8171 11.8487 79.483 8.87221 75.5816 8.87221C71.7608 8.87221 69.3461 11.8891 69.3461 16.5944C69.3492 21.2998 71.7608 24.2763 75.5816 24.2763Z" fill="black"/>
-                        </svg>
+                    </svg>
                 </a>
             </div>
-            <div class="main-menu">
-                <ul class="flex md:items-center justify-center gap-5 flex-col md:flex-row px-5 py-8 md:p-0">
-                    <li class="text-[18px] font-medium leading-none"><a href="#">Fruchtbarkeitsanalyse</a></li>
-                    <li class="text-[18px] font-medium leading-none"><a href="#">Behandlungen <i class="fa-solid fa-chevron-down"></i>
+            <!-- Main Menu -->
+            <div id="collapseMenu"
+                class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-40 max-lg:before:inset-0 max-lg:before:z-50'>
+                <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+                    <path
+                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                    data-original="#000000"></path>
+                    <path
+                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                    data-original="#000000"></path>
+                </svg>
+                </button>
+        
+                <ul class='lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
 
-                    </a></li>
-                    <li class="text-[18px] font-medium leading-none "><a href="#">Warum Cada</a></li>
-                    <li class="text-[18px] font-medium leading-none "><a href="#">Mehr <i class="fa-solid fa-chevron-down"></i>
-
-                    </a></li>
+                <li class='max-lg:border-b max-lg:pb-4 px-3 lg:hidden'>
+                    <a href="javascript:void(0)">
+                        <img src="https://readymadeui.com/readymadeui.svg" alt="logo" class='w-36' />
+                    </a>
+                </li>
+                <li class='max-lg:border-b max-lg:px-3 max-lg:py-3'>
+                    <a href='index.html'
+                    class='hover:text-[#000000] text-[#3D4044] font-semibold block text-[15px]'>Home</a>
+                </li>
+                <li class='group max-lg:border-b max-lg:px-3 max-lg:py-3 relative'>
+                    <a href='blog-category.html'
+                    class=' hover:text-[#000000] text-[#3D4044] font-semibold text-[15px] block'>Category 
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block"
+                        viewBox="0 0 24 24">
+                        <path
+                        d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                        data-name="16" data-original="#000000" />
+                    </svg>
+                    </a>
+                    <!-- Dropdown list -->
+                    <ul class='absolute top-5 max-lg:top-8 left-0 z-50 block space-y-2 shadow-lg bg-white max-h-0 overflow-hidden min-w-[250px] group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+                    <li class='border-b py-3'>
+                        <a href='blog-category.html'
+                        class='hover:text-[#000000] text-[#3D4044] font-semibold text-[15px] block'>
+                        Single Category
+                        </a>
+                    </li>
+                    <li class='border-b py-3'>
+                        <a href='blog-category.html'
+                        class='hover:text-[#000000] text-[#3D4044]font-semibold text-[15px] block'>
+                        Single Category
+                        </a>
+                    </li>
+                    <li class='border-b py-3'>
+                        <a href='blog-category.html'
+                        class='hover:text-[#000000] text-[#3D4044] font-semibold text-[15px] block'>
+                        Single Category
+                        </a>
+                    </li>
+                    <li class='border-b py-3'>
+                        <a href='blog-category.html'
+                        class='hover:text-[#000000] text-[#3D4044] font-semibold text-[15px] block'>
+                        Single Category
+                        </a>
+                    </li>
+                    </ul>
+                </li>
+                <li class='max-lg:border-b max-lg:px-3 max-lg:py-3'><a href='blog-article.html'
+                    class='hover:text-[#000000] text-[#3D4044] font-semibold text-[15px] block'>Article Cada</a></li>
+                <li class='max-lg:border-b max-lg:px-3 max-lg:py-3'><a href='author.html'
+                    class='hover:text-[#000000] text-[#3D4044] font-semibold text-[15px] block'>Authors</a></li>
                 </ul>
             </div>
+            <!-- Menu Button section-->
             <div class="button flex justify-between gap-[10px]">
                 <div>
-                    <button class="bg-[#00000023] text-[14px] leading-[22px] font-medium text-black px-[18px] py-[16px] rounded-[8px]"><i class="fa-solid fa-globe mr-[8px]"></i>DE</button>
+                    <button class="bg-[#0000000D] text-[14px] leading-[22px] font-medium text-black px-[16px] py-[18px] rounded-[8px]"><i class="fa-solid fa-globe mr-[8px]"></i>DE</button>
                 </div>
-                <div>
-                    <button class="text-[16px] leading-[24px] font-medium bg-black text-white px-[24px] py-[16px] rounded-[8px]">Kostenfreie Beratung</button>
+                <div class="hidden md:block">
+                    <button class="text-[16px] leading-[24px] font-medium bg-black text-white px-[24px] py-[16px] rounded-[8px]">Book a free consultation</button>
                 </div>
             </div>
+            <!--Toggle button  -->
+            <div id="toggleOpen" class='flex lg:hidden'>
+                <button>
+                <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                </button>
+            </div>
+
         </div>
     </div>
-</div>
-<!-- Navbar End -->
+</header>
+
+<!--  Navbar End -->
 
 
 
