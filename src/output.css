@@ -810,10 +810,6 @@ video {
   margin-left: 16px;
 }
 
-.mr-4{
-  margin-right: 1rem;
-}
-
 .mr-\[2px\]{
   margin-right: 2px;
 }
@@ -2220,10 +2216,6 @@ video {
   background-color: #0000000D;
 }
 
-.bg-\[\#00000023\]{
-  background-color: #00000023;
-}
-
 .bg-\[\#000000\]{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -2247,10 +2239,6 @@ video {
 .bg-\[\#FCF7E8\]{
   --tw-bg-opacity: 1;
   background-color: rgb(252 247 232 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FFFFFFF\]{
-  background-color: #FFFFFFF;
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -2443,9 +2431,9 @@ video {
   padding-right: 14px;
 }
 
-.px-\[18px\]{
-  padding-left: 18px;
-  padding-right: 18px;
+.px-\[16px\]{
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .px-\[24px\]{
@@ -2483,11 +2471,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-\[12px\]{
   padding-top: 12px;
   padding-bottom: 12px;
@@ -2496,6 +2479,11 @@ video {
 .py-\[16px\]{
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.py-\[18px\]{
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .py-\[32px\]{
@@ -2516,16 +2504,6 @@ video {
 .py-\[64px\]{
   padding-top: 64px;
   padding-bottom: 64px;
-}
-
-.px-\[16px\]{
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.py-\[18px\]{
-  padding-top: 18px;
-  padding-bottom: 18px;
 }
 
 .pb-0{
@@ -2877,11 +2855,6 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-\[\#007bff\]{
-  --tw-text-opacity: 1;
-  color: rgb(0 123 255 / var(--tw-text-opacity));
-}
-
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
 }
@@ -2919,11 +2892,6 @@ video {
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.text-gray-600{
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -3332,7 +3300,9 @@ h3{
 }
 
 .cta-bnr{
-  background-image: url('../images/4.jpg');
+  background-image: url('../images/analysis-cate-image.jpg');
+  background-position: center center;
+  background-size: cover;
 }
 
 .ana-pagi-mt{
@@ -3583,17 +3553,8 @@ h3{
   }
 }
 
-.hover\:fill-\[\#007bff\]:hover{
-  fill: #007bff;
-}
-
 .hover\:font-bold:hover{
   font-weight: 700;
-}
-
-.hover\:text-\[\#007bff\]:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 123 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-\[\#000000\]:hover{
@@ -4055,10 +4016,6 @@ h3{
 
   .md\:border-b-\[1px\]{
     border-bottom-width: 1px;
-  }
-
-  .md\:p-0{
-    padding: 0px;
   }
 
   .md\:px-3{

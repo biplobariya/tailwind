@@ -68,7 +68,9 @@ h3{
 }
 
 .cta-bnr{
-  background-image: url('../images/4.jpg');
+  background-image: url('../images/analysis-cate-image.jpg');
+  background-position: center center;
+  background-size: cover;
 }
 
 .ana-pagi-mt{
